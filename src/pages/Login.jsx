@@ -28,7 +28,6 @@ const Login = () => {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
     setErrors((er) => ({ ...er, [e.target.name]: undefined }));
   };
-
   const validate = () => {
     const next = {};
     if (!emailPattern.test(form.email)) next.email = "Enter a valid email address.";
