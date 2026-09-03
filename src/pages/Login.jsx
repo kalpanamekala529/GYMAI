@@ -7,8 +7,7 @@ import FormInput from "../components/ui/FormInput";
 import { useAuth } from "../context/AuthContext";
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-const Login = () => {
+const Login= () => {
   const { login, isLoggedIn } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -130,5 +129,7 @@ const Login = () => {
     </AuthLayout>
   );
 };
-
 export default Login;
+
+
+
